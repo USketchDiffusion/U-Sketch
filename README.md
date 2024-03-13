@@ -32,10 +32,13 @@ gdown https://drive.google.com/uc?id=1w7eimErXnnRrjY6TY8yXrmno-hvcZ94_
 
 ## Citations
 *Sketch Simplification Network*
--  Simo-Serra, E., Iizuka, S., Sasaki, K., Ishikawa, H.: Learning to simplify: fully
-convolutional networks for rough sketch cleanup, 2016.  https://doi.org/10.1145/2897824.2925972
-- Simo-Serra, E., Iizuka, S., Ishikawa, H.: Mastering sketching: Adversarial augmentation for structured prediction, 2017. http://arxiv.org/abs/1703.08966
+-  Simo-Serra, E., Iizuka, S., Sasaki, K., & Ishikawa, H. (2016). Learning to simplify: fully convolutional networks for rough sketch cleanup. ACM Transactions on Graphics (TOG), 35(4), 1-11.  [access here](https://doi.org/10.1145/2897824.2925972)
+- Simo-Serra, E., Iizuka, S., & Ishikawa, H. (2018). Mastering sketching: adversarial augmentation for structured prediction. ACM Transactions on Graphics (TOG), 37(1), 1-13.
+ [access here](http://arxiv.org/abs/1703.08966)
   
 *MLP baseline*
-- Voynov, Andrey, Kfir Aberman, and Daniel Cohen-Or: Sketch-guided text-to-image diffusion models. ACM SIGGRAPH 2023 Conference Proceedings. 2023.
+- Voynov, A., Aberman, K., & Cohen-Or, D. (2023). Sketch-guided text-to-image diffusion models. In ACM SIGGRAPH 2023 Conference Proceedings (pp. 1-11).
 See implementation [here](https://github.com/Mikubill/sketch2img).
+
+*Stable Diffusion*
+- Rombach, R., Blattmann, A., Lorenz, D., Esser, P., & Ommer, B. (2022). High-resolution image synthesis with latent diffusion models. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition (pp. 10684-10695). [access here](https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html)
