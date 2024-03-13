@@ -2,6 +2,8 @@
 
 This repository contains the implementation of our paper titled *U-Sketch: An Efficient Approach for Sketch to Image Diffusion Models*.
 
+![Example Figure](figures/example.png)
+
 ## Abstract
 Diffusion models have demonstrated remarkable performance in text-to-image synthesis, producing realistic and high resolution images that faithfully adhere to the corresponding text-prompts. 
  Despite their great success, they still fall behind in sketch-to-image synthesis tasks, where in addition to text-prompts, the spatial layout of 
