@@ -1,6 +1,6 @@
 # U-Sketch: Bridging the Gap for Efficient and Realistic Sketch-to-Image Synthesis
 
-This repository contains the implementation of our paper titled *U-Sketch: An Efficient Approach for Sketch to Image Diffusion Models*.
+This repository contains the implementation of our paper titled *U-Sketch: Bridging the Gap for Efficient and Realistic Sketch-to-Image Synthesis*.
 
 ![Example Figure](figures/example.png)
 
