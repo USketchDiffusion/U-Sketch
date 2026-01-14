@@ -1,19 +1,26 @@
-# U-Sketch: An Efficient Approach for Sketch to Image Diffusion Models
+# U-Sketch: Bridging the Gap for Efficient and Realistic Sketch-to-Image Synthesis
 
 This repository contains the implementation of our paper titled *U-Sketch: An Efficient Approach for Sketch to Image Diffusion Models*.
 
 ![Example Figure](figures/example.png)
 
 ## Abstract
-Diffusion models have demonstrated remarkable performance in text-to-image synthesis, producing realistic and high resolution images that faithfully adhere to the corresponding text-prompts. 
- Despite their great success, they still fall behind in sketch-to-image synthesis tasks, where in addition to text-prompts, the spatial layout of 
- the generated images has to closely follow the outlines of certain reference sketches. 
- Employing an MLP latent edge predictor to guide the spatial layout of the synthesized image by predicting edge maps at each denoising step has been 
- recently proposed. Despite yielding promising results, the pixel-wise operation of the MLP does not take into account the spatial layout as a whole, and demands numerous denoising iterations to produce satisfactory 
- images, leading to time inefficiency. To this end, we introduce U-Sketch, a framework featuring a U-Net type latent edge predictor, which is capable of efficiently capturing both local and global features, as well 
- as spatial correlations between pixels. Moreover, we propose the addition of a sketch simplification network that offers the user the choice of preprocessing and simplifying input sketches for enhanced outputs. 
- The experimental results, corroborated by user feedback, demonstrate that our proposed U-Net latent edge predictor leads to more realistic results, that are better aligned with the spatial outlines of the reference sketches, 
- while drastically reducing the number of required denoising steps and, consequently, the overall execution time.
+Diffusion models have demonstrated remarkable performance in text-to-image synthesis,
+producing realistic and high resolution images that faithfully adhere to the corresponding text-prompts.
+Despite their great success, they still fall behind in sketch-to-image synthesis tasks, where in addition to text-
+prompts, the spatial layout of the generated images has to closely follow the outlines of certain reference
+sketches. Adapter-like networks, such as ControlNet and T2I-Adapters, are computationally intensive to
+train and do not consistently yield realistic results; whereas, prior MLP-based latent edge predictors operate
+on a per-pixel basis and fail to consider the spatial layout holistically, thus resulting in time inefficiency
+due to numerous required denoising iterations. To this end, we introduce U-Sketch, a framework featuring a
+U-Net type latent edge predictor, which is capable of efficiently capturing both local and global features, as
+well as spatial correlations between pixels. The proposed approach also incorporates a sketch simplification
+network that allows users to preprocess and simplify input sketches for enhanced outputs, as well as a noise
+initialization strategy that aligns the intrinsic spatial layout of the noise with the desired structure, thereby
+facilitating the denoising process. The experimental results, corroborated by user feedback, demonstrate that
+our U-Sketch leads to more realistic results that are better aligned with the spatial outlines of the reference
+sketches. Additionally, it also drastically reduces the need for extensive computational resources for training
+or fine-tuning, as well as the number of required denoising steps, thereby decreasing overall execution time.
 
 ## Installation
 To run the code, please follow these steps:
